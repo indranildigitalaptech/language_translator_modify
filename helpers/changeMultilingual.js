@@ -32,8 +32,8 @@ const changeMultilingualJson = async (jsonData) => {
 
   const updatedJson = {
     en,
-    fr: fr || await translateText(en, 'en', 'fr'),
     es: es || await translateText(en, 'en', 'es'),
+    fr: fr || await translateText(en, 'en', 'fr'),
   };
 
     //   console.log('Updated JSON:', updatedJson); // Log the updated JSON updatedJson;
