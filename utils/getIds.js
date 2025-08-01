@@ -1,5 +1,5 @@
-const connection = require('../config/db.config.js');
-const getIds = async(table) => {
+
+const getIds = async(table,connection) => {
     if(!table) {
         throw new Error("Table name is required");
     }
