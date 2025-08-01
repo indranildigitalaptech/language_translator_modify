@@ -121,6 +121,7 @@ const updateMultilingualData = async (
                 console.log(`Finished processing id ${id}..........\n\n`);
             })
         );
+        console.log("🙀 All IDs processed successfully.");
     } catch (error) {
         console.error("Error updating multilingual data:", error);
     }

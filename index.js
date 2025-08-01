@@ -6,7 +6,7 @@ const  getIds  = require('./utils/getIds.js');
 const arr = legis_arr;
 const tableName = "tracks";
 const identifierColomn = "id";
-const modifiedColomn = "sub_genre";
+const modifiedColomn = "composer_name";
 
 // (arr,   tableName,  identifierColomn,    modifiedColomn )
 (async()=>{
