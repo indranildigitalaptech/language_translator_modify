@@ -11,9 +11,9 @@ const insertPalylistTracks = require('./helpers/insertPlaylist_tracks.js');
 const arr = legis_arr;
 const tableName = "playlist_tracks";
 const identifierColomn = "id";
-const modifiedColomn = "composer_name";
+const modifiedColomn = "genre";
 
-// (arr,   tableName,  identifierColomn,    modifiedColomn )
+
 (async()=>{
     const ids = await getIds(tableName,connection);
     console.log("Fetched IDs:", ids);
