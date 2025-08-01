@@ -17,7 +17,7 @@ const translateText = async (text, sourceLang, targetLang) => {
 
     return response.data[0][0][0]; // Extract translated text
   } catch (error) {
-    console.error(`Translation error [${sourceLang} → ${targetLang}]:`, error.message);
+    console.error(`🤡 Translation error [${sourceLang} → ${targetLang}]:`, error.message);
     return null;
   }
 };
@@ -37,6 +37,10 @@ const changeMultilingualJson = async (jsonData) => {
   };
 
     //   console.log('Updated JSON:', updatedJson); // Log the updated JSON updatedJson;
+  if(!updatedJson.es || !updatedJson.fr || updatedJson== null || updatedJson.es === null || updatedJson.fr === null) {
+    console.error('😿 Translation failed for one or more languages.');
+    return null;
+  }
   return updatedJson;
 };
 
